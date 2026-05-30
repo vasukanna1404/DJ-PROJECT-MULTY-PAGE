@@ -1,0 +1,1157 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+NO:wght@100..400&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&family=Sekuya&family=Sonsie+One&family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Black+Ops+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+NO:wght@100..400&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&family=Sekuya&family=Sonsie+One&family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Black+Ops+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+NO:wght@100..400&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&family=Sekuya&family=Sonsie+One&family=Squada+One&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: opx;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: siver;
+
+}
+
+.logo img {
+    height: 50px;
+}
+
+
+nav {
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0px 0px 15px white;
+    position: absolute;
+}
+
+.navdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: monospace;
+
+}
+
+.navdiv a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: initial;
+    text-decoration: none;
+    color: white;
+    height: 90px;
+    position: relative;
+    font-size: 23px;
+    font-family: "Black Ops One", system-ui;
+    left: 2px;
+    padding: 20px;
+}
+
+.c-botton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: initial;
+    text-decoration: none;
+    color: white;
+    height: 90px;
+    position: relative;
+    font-size: 23px;
+    font-family: "Black Ops One", system-ui;
+    left: 2px;
+    top: 5px;
+    padding: 16px;
+}
+
+
+
+.navdiv .main-contact {
+    top: -10px;
+    left: 4px;
+}
+
+
+.logo i,
+label {
+    position: relative;
+    display: none;
+}
+
+.home {
+    /* height: 100vh; */
+    background-image: url(https://images.unsplash.com/photo-1544785349-c4a5301826fd?fm=jpg&q=60&w=3000&100%=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGolMjBzZXR8ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+}
+
+.about {
+    height: 100vh;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.service {
+    height: 100vh;
+    background-color: tomato;
+}
+
+.contact {
+    height: 100vh;
+    background-color: rgb(98, 98, 117);
+}
+
+a {
+    padding: 5px;
+    text-shadow: 0px 0px 1px black;
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+
+a:hover::before {
+    height: 50%;
+}
+
+a:hover::after {
+    height: 50%;
+}
+
+.ramu input,
+label {
+    display: none;
+    opacity: 0;
+}
+
+
+
+.logo input:checked~.navdiv {
+    left: 0%
+}
+
+/* button */
+
+.main-contact {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    height: 40px;
+    width: 200px;
+    position: relative;
+    /* z-index: -1; */
+}
+
+.contact-out {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 30px;
+    width: 155px;
+    transform: skew(-45deg);
+    transition: 0.5s ease-in box-shadow;
+}
+
+.contact-in {
+    position: absolute;
+    height: 35px;
+    width: 155px;
+    transform: skew(-45deg);
+    z-index: 1;
+}
+
+.contact {
+    font-size: 15px;
+    position: relative;
+    transition: 0.5s ease transform;
+    position: fixed;
+    z-index: 2;
+}
+
+
+.contact:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    transform: scale(.9);
+}
+
+.contact:hover+.contact-out {
+    box-shadow: 0 0 10px #3bc7b5c5, 0 0 25px #d5ff6270;
+}
+
+.border1 {
+    background-color: aqua;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    height: 4px;
+    width: 44px;
+    transform: skew(-40deg);
+}
+
+.border2 {
+    position: absolute;
+    top: 70px;
+    right: 40px;
+    height: 4px;
+    width: 115px;
+    transform: skew(-40deg);
+}
+
+.two-btn {
+    display: flex;
+    width: 300px
+}
+
+.three-btn {
+    display: flex;
+    gap: 90px
+}
+
+/* listern botton */
+.listern-botton {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: initial;
+    text-decoration: none;
+    color: white;
+    height: 90px;
+    position: relative;
+    font-size: 23px;
+    font-family: "Black Ops One", system-ui;
+    left: 2px;
+    top: 5px;
+    padding: 16px;
+}
+
+.listern-out {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    height: 38px;
+    width: 155px;
+    transform: skew(-45deg);
+    transition: 0.5s ease-in box-shadow;
+}
+
+.listern-in {
+    left: -18px;
+    top: 27px;
+    position: absolute;
+    height: 43px;
+    width: 155px;
+    transform: skew(-45deg);
+    z-index: 1;
+}
+
+.listern {
+    position: relative;
+    transition: 0.5s ease transform;
+    position: fixed;
+    z-index: 2;
+}
+
+
+.listern:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    transform: scale(.9);
+}
+
+.listern:hover+.listern-out {
+    box-shadow: 0 0 10px #3bc7b5c5, 0 0 25px #d5ff6270;
+}
+
+.listern-border1 {
+    background-color: aqua;
+    position: absolute;
+    top: 75px;
+    left: -46px;
+    height: 5px;
+    width: 44px;
+    transform: skew(-40deg);
+}
+
+.listern-border2 {
+    position: absolute;
+    top: 76px;
+    left: 10px;
+    height: 5px;
+    width: 115px;
+    transform: skew(-40deg);
+}
+
+
+
+
+.two-btn a {
+    position: relative;
+}
+
+/* book bottton */
+
+.booking-botton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: initial;
+    text-decoration: none;
+    color: white;
+    height: 90px;
+    position: relative;
+    font-size: 23px;
+    font-family: "Black Ops One", system-ui;
+    left: 2px;
+    top: 5px;
+    padding: 16px;
+}
+
+.booking-out {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    height: 38px;
+    width: 155px;
+    transform: skew(-45deg);
+    transition: 0.5s ease-in box-shadow;
+}
+
+.booking-in {
+    position: absolute;
+    height: 43px;
+    width: 155px;
+    transform: skew(-45deg);
+    z-index: 1;
+}
+
+.booking {
+    position: relative;
+    transition: 0.5s ease transform;
+    position: fixed;
+    z-index: 2;
+}
+
+
+.booking:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    transform: scale(.9);
+}
+
+.booking:hover+.booking-out {
+    box-shadow: 0 0 10px #3bc7b5c5, 0 0 25px #d5ff6270;
+}
+
+.booking-border1 {
+    background-color: aqua;
+    position: absolute;
+    top: 70px;
+    left: -41px;
+    height: 5px;
+    width: 44px;
+    transform: skew(-40deg);
+}
+
+.booking-border2 {
+    position: absolute;
+    top: 70px;
+    right: -10px;
+    height: 6px;
+    width: 115px;
+    transform: skew(-40deg);
+}
+
+.three-btn a {
+    position: relative;
+}
+
+
+
+/* section */
+
+.vasu-1 {
+    padding: 50PX;
+    color: white;
+}
+
+.vasu-1 .im {
+    margin: 250px 0px 10px 80px;
+    font-family: cursive;
+}
+
+
+/* up commig shows box */
+.up-show {
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    background-color: black;
+}
+
+.up-show .hd {
+
+    color: white;
+    font-size: 30px;
+    font-family: "Black Ops One", system-ui;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.card {
+    color: white;
+    background-color: black;
+}
+
+.card-3 {
+    margin-top: 30px;
+    display: flex;
+    padding: 0px 40px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    height: 65%
+}
+
+table {
+    padding-right: 4px;
+}
+
+
+/* style-botton */
+
+.style-btn {
+    margin-top: 10px;
+    background-color: rgb(18, 18, 18);
+    border-radius: 15px;
+    width: 140px;
+    color: white;
+    padding: 10px 40px;
+    box-shadow: inset 0px 0px 20px rgb(134, 229, 229);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+
+/* song list box */
+
+.sl-box {
+
+    position: relative;
+    background-color: black;
+    ;
+}
+
+.sl-box .hd {
+    color: white;
+    font-size: 30px;
+    font-family: "Black Ops One", system-ui;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0px;
+
+}
+
+.sl-ovbox {
+    display: flex;
+    gap: 10PX;
+    padding: 0px 20px 20px 20px;
+}
+
+
+.sl-img img {
+    width: 90%;
+    height: 60vh;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.sl-m-box {
+    width: 55%;
+    height: 60vh;
+    top: 10px;
+    background-color: rgb(48, 48, 48);
+    border: 1px solid white;
+    /* background-image: linear-gradient(rgb(17, 0, 86),rgb(109, 26, 26)); */
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.m-bar {
+    margin-top: 10px;
+    width: 50%;
+    height: 52vh;
+    top: 10px;
+    background-image: linear-gradient(rgb(17, 0, 86), rgb(109, 26, 26));
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.m-bar img {
+    padding: 5px;
+    width: 60%;
+    height: 50%;
+}
+
+.m-namei {
+
+    display: flex;
+    color: white;
+    width: 100%;
+
+}
+
+.m-i {
+    margin-left: 14px;
+    margin-top: 8px;
+    font-size: 26px;
+    align-items: center;
+}
+
+.m-name p {
+
+    margin-left: -45px;
+    margin-top: -7px;
+}
+
+.m-name span {
+    padding: 2px;
+    border-radius: 4px;
+
+    background-color: grey;
+}
+
+
+.sl-songlist {
+    width: 100%;
+    overflow-y: scroll;
+
+}
+
+.song {
+    width: 100%;
+    height: 400px;
+    color: white;
+}
+
+.song table p {
+    font-size: 10px;
+    margin-top: -6px;
+}
+
+.time {
+    font-size: 24px;
+    padding-left: 35px
+}
+
+.m-p-btn {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.l-p-btn {
+    margin-top: 20px;
+    display: flex;
+}
+
+.l-p-btn i {
+    font-size: 25px;
+}
+
+.li {
+    display: flex;
+    margin-top: 1px;
+    margin-left: -4px;
+    height: 23px;
+    width: 0px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 2px;
+}
+
+
+
+.r-p-btn {
+    margin-top: 20px;
+
+}
+
+.r-p-btn i {
+    position: relative;
+    top: -23px;
+    left: 2px;
+    margin-right: 4px;
+    font-size: 25px;
+}
+
+.li-2 {
+    display: flex;
+    margin-top: 1px;
+    margin-left: 30px;
+    height: 23px;
+    width: 0px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 2px;
+}
+
+
+
+
+.c-p-btn {
+    color: wheat;
+    font-size: 44px;
+}
+
+/* grid images */
+.gi-box {
+    padding: 20px;
+    /* height: 100vh; */
+    background-color: black;
+}
+
+.gi-box .hd {
+    color: white;
+    font-size: 20px;
+    font-family: "Black Ops One", system-ui;
+    text-align: center;
+    padding: 20px
+}
+
+/* grid box */
+
+.photo-carousel {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: 30vh 15vh 30vh;
+    gap: 15px;
+    grid-template-areas:
+        "one one one one two two two two three three three three three"
+        "four four four four four five five five three three three three three"
+        "four four four four four six six six six seven seven seven seven"
+    ;
+}
+
+.img-1 {
+    grid-area: one;
+}
+
+.img-2 {
+    grid-area: two;
+}
+
+.img-3 {
+    grid-area: three;
+}
+
+.img-4 {
+    grid-area: four;
+}
+
+.img-5 {
+    grid-area: five;
+}
+
+.img-6 {
+    grid-area: six;
+}
+
+.img-7 {
+    grid-area: seven;
+}
+
+
+.photo-carousel img {
+    height: 100%;
+    width: 100%;
+}
+
+.modern-btn {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+/* footer-main-container */
+
+.footer-box {
+    display: flex;
+    padding: 10px;
+    background-color: black;
+}
+
+.f-main {
+    color: rgb(0, 176, 192);
+    padding: 20px;
+    background-color: black;
+}
+
+.f-main h1 {
+    text-shadow: 0px 0px 5px green;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: -10px;
+}
+
+.f-1-box {
+    padding: 25px;
+    width: 50%;
+}
+
+.f-2-box {
+    width: 50%;
+    padding: 5px;
+}
+
+.f-in {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 70px;
+}
+
+.dj-line {
+    min-height: 80%;
+    width: 2px;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+.f-in img {
+    height: 40px
+}
+
+.f-input {
+    display: flex !important;
+    gap: 20px;
+    /* justify-content: space-evenly; */
+    display: inline-block;
+    position: relative
+}
+
+.f-i-box {
+    padding: 7px;
+    border: 1px solid skyblue;
+    width: 280px;
+    border-radius: 4px;
+}
+
+.f-input button {
+    margin-left: 10px;
+    padding: 7px;
+    background-color: skyblue;
+    border-radius: 4px;
+    border: none
+}
+
+.f-input button:hover {
+    box-shadow: 0px 0px 10px rgb(64, 180, 225);
+}
+
+.f-2-box {
+    /* color: skyblue; */
+    display: flex;
+  
+}
+
+.f-2-box h1 {
+    text-shadow: 0px 0px 5px green;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: -10px;
+}
+
+.q-link {
+
+    display: flex;
+    /* align-items: center;
+    align-items: start; */
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.q-link, h1 {
+    padding: 12px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+
+.follow-me {
+    padding: 20px;
+    display: flex;
+    /* align-items: center; */
+    align-items: start;
+    flex-direction: column;
+}
+
+.q-link,
+h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+
+.follow-me h1 {
+    text-align: center;
+    margin-bottom: 2px;
+    font-size: 30px;
+    font-family: monospace;
+  
+}
+
+@media screen and (max-width: 750px) {
+
+.navdiv {
+            position: fixed;
+            background-color: transparent;
+            color: white;
+            left: -100%;
+            top: 80px;
+            width: 100%;
+            height: 90vh;
+            font-size: 30px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 40px;
+            /* color: rgb(0, 0, 0); */
+            transition: all 1s;
+
+        }
+
+        label {
+            /* display: none; */
+            opacity: 1;
+        }
+
+        .mobile-icon {
+            display: block;
+        }
+
+        .navdiv a {
+            font-family: initial;
+            text-decoration: none;
+            color: white;
+            height: 90px;
+            position: relative;
+            font-size: 23px;
+            top: -23px;
+            padding: 20px;
+        }
+
+        .logo i,
+        label {
+            position: relative;
+        }
+
+
+    }
+
+
+/* MOBILE */
+@media screen and (max-width: 750px) {
+
+
+    .three-btn {
+        margin-left: 50px;
+
+    }
+
+
+    .three-btn {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        background: transparent;
+    }
+
+    .mobile-icon {
+        display: block;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    label {
+        display: block;
+    }
+
+    #vasu {
+        display: none;
+    }
+
+    .navdiv {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: black;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        z-index: 999;
+    }
+
+    #vasu:checked~.navdiv {
+        left: 0;
+    }
+
+    .navdiv a {
+        font-size: 20px;
+        height: 100%;
+    }
+
+    .home {
+        padding: 120px 20px 50px;
+        text-align: center;
+    }
+
+    .vasu-1 {
+        padding: 10px;
+    }
+
+    .vasu-1 .im {
+        margin: 0;
+        width: 180px;
+    }
+
+    .two-btn {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .booking-botton,
+    .listern-botton {
+        width: 100%;
+    }
+
+    .card-3 {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .card {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .up-show {
+        height: 100%;
+    }
+
+    .sl-box {
+        height: 100%;
+        padding-bottom: 40px;
+    }
+
+    .sl-ovbox {
+        flex-direction: column;
+    }
+
+    .sl-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sl-m-box {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .m-bar {
+        width: 100%;
+        height: 100%;
+    }
+
+    .m-bar img {
+        width: 150px;
+        height: 100%;
+    }
+
+    .sl-songlist {
+        overflow-x: 100%;
+    }
+
+    .song table {
+        width: 100%;
+    }
+
+    .time {
+        padding-left: 10px;
+        font-size: 18px;
+    }
+
+    .gi-box {
+        height: 100%;
+    }
+
+    .photo-carousel {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photo-carousel img {
+        border-radius: 10px;
+    }
+
+    .footer-box {
+        flex-direction: column;
+    }
+
+    .f-1-box,.f-2-box {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .f-input {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .f-input button {
+        margin-left: 0;
+        width: 30%;
+    }
+
+    .follow-me,
+    .q-link {
+        padding: 0;
+    }
+}
+
+
+
+
+/* tab */
+@media screen and (max-width: 950px) {
+
+    nav {
+        padding: 15px 20px;
+    }
+
+    .navdiv {
+        gap: 10px;
+    }
+
+    .navdiv a {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .card-3 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .up-show {
+        height: 100%;
+        padding-bottom: 50px;
+    }
+
+    .sl-ovbox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sl-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    
+
+    .m-bar {
+        width: 100%;
+        height: 100%;
+    }
+
+    .photo-carousel {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100%;
+        grid-template-areas: none;
+    }
+
+    .photo-carousel div {
+        grid-area: unset !important;
+    }
+
+    .footer-box {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .f-1-box,
+    .f-2-box {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .f-2-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
